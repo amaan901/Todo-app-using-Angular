@@ -1,0 +1,23 @@
+.content{
+    padding-top: 10px;
+}
+.tittle{
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.row{
+    display: flex;
+    gap: 10px;
+}
+.mat-form-field{
+    width: 100%;
+}
+.action{
+    padding: 0px 25px 20px;
+}
+.button{
+    width: 40%;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+}

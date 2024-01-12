@@ -1,0 +1,52 @@
+<div mat-dialog-tittle>
+    <h1 class="tittle">Student Form</h1>
+</div>
+
+<form [formGroup]="empform" (ngsubmit)="employeesumbitbtn()">
+<div mat-dialog-content class="content">
+
+    <div class="row">
+        <mat-form-field class="mat-form-field" appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput type="text" formControlName="Name" required>
+        </mat-form-field>
+        <mat-form-field class="mat-form-field" appearance="outline">
+            <mat-label>Roll_No</mat-label>
+            <input matInput type="text" formControlName="Roll_No" required>
+        </mat-form-field>
+    </div>
+
+
+    <div class="row">
+        <mat-form-field class="mat-form-field" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" formControlName="Email" required>
+        </mat-form-field>
+        <mat-form-field class="mat-form-field" appearance="outline">
+            <mat-label>Enter DOB</mat-label>
+            <input matInput [matDatepicker]="picker" formControlName="DOB" required>
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+    </div>
+
+    <div class="row">
+        <mat-form-field class="mat-form-field" appearance="outline">
+            <mat-label>Phone</mat-label>
+            <input matInput type="text" formControlName="Phone" required>
+        </mat-form-field>
+
+        <mat-form-field class="mat-form-field" appearance="outline">
+            <mat-label>Course</mat-label>
+            <input matInput type="text" formControlName="Course" required>
+        </mat-form-field>
+    </div>
+
+</div>
+
+<div>
+    <button class="button" mat-raised-button type="button" [mat-dialog-close]="false" >cancle</button>
+    <button class="button" mat-raised-button color="primary" type="submit" (click)="employeesumbitbtn()">{{data ? 'update' :'Add'}}</button>
+</div>
+</form>

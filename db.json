@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "students": [
+    {
+      "Name": "mmm",
+      "Roll_No": "22222",
+      "Email": "fake",
+      "DOB": "2023-12-05T18:30:00.000Z",
+      "Phone": "9557779306",
+      "Course": "amaan",
+      "id": 2
+    },
+    {
+      "Name": "mohd amaan",
+      "Roll_No": "22173030",
+      "Email": "malik205786@gmail.com",
+      "DOB": "2023-12-12T18:30:00.000Z",
+      "Phone": "9557779306",
+      "Course": "mca",
+      "id": 4
+    }
+  ]
+}
